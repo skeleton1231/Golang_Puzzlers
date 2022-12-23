@@ -20,7 +20,7 @@ func init() {
 	}
 	// 方式3。
 	cmdLine.StringVar(&name, "name", "everyone", "The greeting object.")
-	flag.StringVar(&name, "name", "everyone", "The greeting object.")
+	//flag.StringVar(&name, "name", "everyone", "The greeting object.")
 }
 
 func main() {
@@ -31,6 +31,6 @@ func main() {
 	//}
 	// 方式3。
 	cmdLine.Parse(os.Args[1:])
-	flag.Parse()
+	//flag.Parse()
 	fmt.Printf("Hello, %s!\n", name)
 }
